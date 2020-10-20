@@ -3,8 +3,100 @@
 "http://gramps-project.org/xml/1.7.1/grampsxml.dtd">
 <database xmlns="http://gramps-project.org/xml/1.7.1/">
   <header>
-    <created date="2020-10-13" version="5.1.2"/>
+    <created date="2020-10-20" version="5.1.2"/>
     <researcher>
     </researcher>
   </header>
+  <events>
+    <event handle="_e94b4f9e65630c75cc07bb59b00" change="1603185422" id="E0000">
+      <type>Birth</type>
+      <dateval val="1575"/>
+      <description>Etwa um 1575</description>
+    </event>
+    <event handle="_e94b509501e731eb8b2231aec2" change="1603185523" id="E0001">
+      <type>Death</type>
+      <dateval val="1622-07-14"/>
+      <description>Gefallen als Fähnrich im Kampf gegen Österreich bei Chaflur im Untergadin am 14. Juli 1622.</description>
+    </event>
+    <event handle="_e94b5367fee78ae9dfb8a95a2d6" change="1603185819" id="E0002">
+      <type>Birth</type>
+      <dateval val="1600"/>
+      <description>ca</description>
+    </event>
+    <event handle="_e94b53923b63eb98aa4d37d0cb7" change="1603185836" id="E0003">
+      <type>Death</type>
+      <dateval val="1677"/>
+      <description>ca</description>
+    </event>
+    <event handle="_e94b5425542220f90178497b36d" change="1603185897" id="E0004">
+      <type>Military Service</type>
+      <description>Leutnant</description>
+    </event>
+    <event handle="_e94b561ee8e598b6bfe454f6ca7" change="1603186104" id="E0005">
+      <type>Birth</type>
+      <dateval val="1605"/>
+      <description>ca</description>
+    </event>
+    <event handle="_e94b562f06566957259f14ba2fd" change="1603186110" id="E0006">
+      <type>Death</type>
+      <dateval val="1675"/>
+      <description>ca</description>
+    </event>
+    <event handle="_e94b56c588e382564e7f166dc33" change="1603186172" id="E0007">
+      <type>Residence</type>
+      <dateval val="1623"/>
+      <description>erw. 1623-1671 in Pöschis</description>
+    </event>
+    <event handle="_e94b57d4a7a6e289496cbf825e9" change="1603186283" id="E0008">
+      <type>Residence</type>
+      <dateval val="1622"/>
+      <description>erw. 1622-1677 im Winkel</description>
+    </event>
+  </events>
+  <people home="_e94b4d1f6004e2aba5b0eb26712">
+    <person handle="_e94b4d1f6004e2aba5b0eb26712" change="1603186039" id="I0000">
+      <gender>M</gender>
+      <name type="Birth Name">
+        <first>David Davatz</first>
+        <call>David</call>
+        <surname></surname>
+      </name>
+      <eventref hlink="_e94b4f9e65630c75cc07bb59b00" role="Primary"/>
+      <eventref hlink="_e94b509501e731eb8b2231aec2" role="Primary"/>
+      <parentin hlink="_e94b55506455de0c5d3f6703bc7"/>
+    </person>
+    <person handle="_e94b5320d493a7c0dec987f9ab2" change="1603186295" id="I0001">
+      <gender>M</gender>
+      <name type="Birth Name">
+        <first>Dolf Davatz</first>
+        <call>Dolf</call>
+        <surname></surname>
+      </name>
+      <eventref hlink="_e94b5367fee78ae9dfb8a95a2d6" role="Primary"/>
+      <eventref hlink="_e94b53923b63eb98aa4d37d0cb7" role="Primary"/>
+      <eventref hlink="_e94b5425542220f90178497b36d" role="Primary"/>
+      <eventref hlink="_e94b57d4a7a6e289496cbf825e9" role="Primary"/>
+      <childof hlink="_e94b55506455de0c5d3f6703bc7"/>
+    </person>
+    <person handle="_e94b55cfed57403252fabfae9ad" change="1603186185" id="I0002">
+      <gender>M</gender>
+      <name type="Birth Name">
+        <first>Jann Davatz</first>
+        <call>Jann</call>
+        <surname></surname>
+      </name>
+      <eventref hlink="_e94b561ee8e598b6bfe454f6ca7" role="Primary"/>
+      <eventref hlink="_e94b562f06566957259f14ba2fd" role="Primary"/>
+      <eventref hlink="_e94b56c588e382564e7f166dc33" role="Primary"/>
+      <childof hlink="_e94b55506455de0c5d3f6703bc7"/>
+    </person>
+  </people>
+  <families>
+    <family handle="_e94b55506455de0c5d3f6703bc7" change="1603186185" id="F0000">
+      <rel type="Unknown"/>
+      <father hlink="_e94b4d1f6004e2aba5b0eb26712"/>
+      <childref hlink="_e94b5320d493a7c0dec987f9ab2"/>
+      <childref hlink="_e94b55cfed57403252fabfae9ad"/>
+    </family>
+  </families>
 </database>
