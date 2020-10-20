@@ -76,11 +76,10 @@
       <eventref hlink="_e94b57d4a7a6e289496cbf825e9" role="Primary"/>
       <childof hlink="_e94b55506455de0c5d3f6703bc7"/>
     </person>
-    <person handle="_e94b55cfed57403252fabfae9ad" change="1603186785" id="I0002">
+    <person handle="_e94b55cfed57403252fabfae9ad" change="1603187002" id="I0002">
       <gender>M</gender>
       <name type="Birth Name">
         <first>Jann</first>
-        <call>Jann</call>
         <surname>Davatz</surname>
       </name>
       <eventref hlink="_e94b561ee8e598b6bfe454f6ca7" role="Primary"/>
