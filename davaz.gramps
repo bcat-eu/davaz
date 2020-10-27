@@ -3,7 +3,7 @@
 "http://gramps-project.org/xml/1.7.1/grampsxml.dtd">
 <database xmlns="http://gramps-project.org/xml/1.7.1/">
   <header>
-    <created date="2020-10-20" version="5.1.2"/>
+    <created date="2020-10-27" version="5.1.2"/>
     <researcher>
     </researcher>
   </header>
@@ -52,6 +52,37 @@
       <dateval val="1622"/>
       <description>erw. 1622-1677 im Winkel</description>
     </event>
+    <event handle="_e96206d997d6719a6664cf535a1" change="1603795193" id="E0009">
+      <type>Birth</type>
+      <dateval val="1640"/>
+      <description>ca</description>
+    </event>
+    <event handle="_e96206f699e74640a20f5ce2483" change="1603795205" id="E0010">
+      <type>Death</type>
+      <dateval val="1710"/>
+      <description>ca</description>
+    </event>
+    <event handle="_e96207fdd324f064aa9db9613ae" change="1603795313" id="E0011">
+      <type>Residence</type>
+      <dateval val="1673"/>
+      <description>erw. 1673-1707</description>
+    </event>
+    <event handle="_e9620ba075e6d525af765b8ce53" change="1603795694" id="E0012">
+      <type>Birth</type>
+      <dateval val="1665"/>
+    </event>
+    <event handle="_e9620bccd7b1e0a3f565a45466d" change="1603795712" id="E0013">
+      <type>Death</type>
+      <dateval val="1748"/>
+    </event>
+    <event handle="_e9620c9d4255e7ce73ab77a792b" change="1603795798" id="E0014">
+      <type>Birth</type>
+      <dateval val="1696"/>
+    </event>
+    <event handle="_e9620cacb1d3f398da3cb95864d" change="1603795804" id="E0015">
+      <type>Death</type>
+      <dateval val="1761"/>
+    </event>
   </events>
   <people home="_e94b4d1f6004e2aba5b0eb26712">
     <person handle="_e94b4d1f6004e2aba5b0eb26712" change="1603186757" id="I0000">
@@ -76,7 +107,7 @@
       <eventref hlink="_e94b57d4a7a6e289496cbf825e9" role="Primary"/>
       <childof hlink="_e94b55506455de0c5d3f6703bc7"/>
     </person>
-    <person handle="_e94b55cfed57403252fabfae9ad" change="1603187002" id="I0002">
+    <person handle="_e94b55cfed57403252fabfae9ad" change="1603795605" id="I0002">
       <gender>M</gender>
       <name type="Birth Name">
         <first>Jann</first>
@@ -86,14 +117,56 @@
       <eventref hlink="_e94b562f06566957259f14ba2fd" role="Primary"/>
       <eventref hlink="_e94b56c588e382564e7f166dc33" role="Primary"/>
       <childof hlink="_e94b55506455de0c5d3f6703bc7"/>
+      <parentin hlink="_e9620a4c4ad3513269f7cab61f2"/>
+    </person>
+    <person handle="_e962067400c76f9d74a38c6e7fe" change="1603795753" id="I0004">
+      <gender>M</gender>
+      <name type="Birth Name">
+        <first>David</first>
+        <surname>Davatz</surname>
+      </name>
+      <eventref hlink="_e96206d997d6719a6664cf535a1" role="Primary"/>
+      <eventref hlink="_e96206f699e74640a20f5ce2483" role="Primary"/>
+      <eventref hlink="_e96207fdd324f064aa9db9613ae" role="Primary"/>
+      <childof hlink="_e9620a4c4ad3513269f7cab61f2"/>
+      <parentin hlink="_e9620b43291438c8e0aab3b2920"/>
+    </person>
+    <person handle="_e9620b633ba2e81e79cc75641cd" change="1603795753" id="I0005">
+      <gender>M</gender>
+      <name type="Birth Name">
+        <first>Peter</first>
+        <surname>Davatz</surname>
+      </name>
+      <eventref hlink="_e9620ba075e6d525af765b8ce53" role="Primary"/>
+      <eventref hlink="_e9620bccd7b1e0a3f565a45466d" role="Primary"/>
+      <childof hlink="_e9620b43291438c8e0aab3b2920"/>
+    </person>
+    <person handle="_e9620c41a57412fb100359d11e4" change="1603795817" id="I0006">
+      <gender>F</gender>
+      <name type="Birth Name">
+        <first>Luzia Adam</first>
+        <surname>Davatz</surname>
+      </name>
+      <eventref hlink="_e9620c9d4255e7ce73ab77a792b" role="Primary"/>
+      <eventref hlink="_e9620cacb1d3f398da3cb95864d" role="Primary"/>
     </person>
   </people>
   <families>
-    <family handle="_e94b55506455de0c5d3f6703bc7" change="1603186185" id="F0000">
+    <family handle="_e94b55506455de0c5d3f6703bc7" change="1603795051" id="F0000">
       <rel type="Unknown"/>
       <father hlink="_e94b4d1f6004e2aba5b0eb26712"/>
       <childref hlink="_e94b5320d493a7c0dec987f9ab2"/>
       <childref hlink="_e94b55cfed57403252fabfae9ad"/>
+    </family>
+    <family handle="_e9620a4c4ad3513269f7cab61f2" change="1603795605" id="F0001">
+      <rel type="Unknown"/>
+      <father hlink="_e94b55cfed57403252fabfae9ad"/>
+      <childref hlink="_e962067400c76f9d74a38c6e7fe"/>
+    </family>
+    <family handle="_e9620b43291438c8e0aab3b2920" change="1603795753" id="F0002">
+      <rel type="Unknown"/>
+      <father hlink="_e962067400c76f9d74a38c6e7fe"/>
+      <childref hlink="_e9620b633ba2e81e79cc75641cd"/>
     </family>
   </families>
 </database>
