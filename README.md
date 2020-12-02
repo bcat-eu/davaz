@@ -5,6 +5,12 @@ We want to digitalize the full Davatz, Davats, Taffattz, Davaz, etc. family tree
 We use [Gramps XML format](https://gramps-project.org/wiki/index.php/Database_Formats): 
 Export > Gramps XML (we have no media) > No compression (for clearer diffs) > davaz.gramps. 
 
+## GEDCOM File
+
+We use GEDCOM file to generate PDF, so we generate it after major tree changes.
+
+The logic is similar to exporting XML, it's another way to export the tree, but we also exclude living people as well as poeple marked as private so that they do not appear in the resulting PDF.
+
 ## Collaboration Workflow
 
 There is one quirk which has more to do with Gramps, but affects our workflow - importing a family tree into existing one merges it instead of replacing. So if I import the updated tree after merging external changes in github, it will create duplicates of all existing people and add new ones. To import actual XML from the repository one would need to start an empty family tree (Family Trees > Manage Family Trees > New). We could also use that as a feature if we ever had conflicts that we can't solve.
