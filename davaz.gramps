@@ -3,7 +3,7 @@
 "http://gramps-project.org/xml/1.7.1/grampsxml.dtd">
 <database xmlns="http://gramps-project.org/xml/1.7.1/">
   <header>
-    <created date="2020-12-04" version="GrampsAIO64-5.1.3-2"/>
+    <created date="2020-12-08" version="GrampsAIO64-5.1.3-2"/>
     <researcher>
     </researcher>
   </header>
@@ -2709,7 +2709,7 @@
       <dateval val="1986"/>
     </event>
   </events>
-  <people home="_e9dd033c75842feb18e2730cd1f">
+  <people home="_e9891e2fdd7dc80ac2e9656bf8">
     <person handle="_e94b4d1f6004e2aba5b0eb26712" change="1603186757" id="I0000">
       <gender>M</gender>
       <name type="Birth Name">
@@ -3100,7 +3100,7 @@
       <eventref hlink="_e9b6b927fd44717c3c3b5804db2" role="Primary"/>
       <childof hlink="_e98919714de4b3c14623c8904c4"/>
     </person>
-    <person handle="_e9891e2fdd7dc80ac2e9656bf8" change="1606068932" id="I0039">
+    <person handle="_e9891e2fdd7dc80ac2e9656bf8" change="1607457618" id="I0039">
       <gender>M</gender>
       <name type="Birth Name">
         <first>Abraham</first>
@@ -3113,6 +3113,8 @@
       <eventref hlink="_e9b6bac520cc1b13e9a8efdc27" role="Primary"/>
       <childof hlink="_e98919714de4b3c14623c8904c4"/>
       <parentin hlink="_e990633402f17735c8e45148206"/>
+      <parentin hlink="_e9ea6e0727b68a67fd4917f1d4b"/>
+      <parentin hlink="_e9ea719cf283e09651e35a0b575"/>
     </person>
     <person handle="_e9894ff42104746eaad89fbdf37" change="1604851128" id="I0040">
       <gender>F</gender>
@@ -3805,7 +3807,7 @@
       <eventref hlink="_e990602dbe06b33b8af65c88d32" role="Primary"/>
       <parentin hlink="_e990633402f17735c8e45148206"/>
     </person>
-    <person handle="_e9906179f3e4c89870ac0ad6564" change="1605039590" id="I0106">
+    <person handle="_e9906179f3e4c89870ac0ad6564" change="1607456793" id="I0106">
       <gender>F</gender>
       <name type="Birth Name">
         <first>Leta</first>
@@ -3813,8 +3815,9 @@
       </name>
       <eventref hlink="_e9906206c4f1a9505107b82c294" role="Primary"/>
       <eventref hlink="_e990623ad8167bc2fdcc8b453ed" role="Primary"/>
+      <parentin hlink="_e9ea6e0727b68a67fd4917f1d4b"/>
     </person>
-    <person handle="_e99062893aa735584927321646f" change="1605039653" id="I0107">
+    <person handle="_e99062893aa735584927321646f" change="1607457146" id="I0107">
       <gender>F</gender>
       <name type="Birth Name">
         <first>Anna</first>
@@ -3822,8 +3825,9 @@
       </name>
       <eventref hlink="_e99062d211c3e2502611c5b64" role="Primary"/>
       <eventref hlink="_e99062ed6577bbc08f908f06542" role="Primary"/>
+      <parentin hlink="_e9ea719cf283e09651e35a0b575"/>
     </person>
-    <person handle="_e990638e0793d33bb6bfcff6c38" change="1605040057" id="I0108">
+    <person handle="_e990638e0793d33bb6bfcff6c38" change="1607456607" id="I0108">
       <gender>M</gender>
       <name type="Birth Name">
         <first>Jon</first>
@@ -3833,7 +3837,7 @@
       <eventref hlink="_e99063dc383589cfe927bb9d588" role="Primary"/>
       <childof hlink="_e990633402f17735c8e45148206"/>
     </person>
-    <person handle="_e990640230e137e9f3300272a59" change="1605040057" id="I0109">
+    <person handle="_e990640230e137e9f3300272a59" change="1607456607" id="I0109">
       <gender>M</gender>
       <name type="Birth Name">
         <first>Abraham</first>
@@ -3843,7 +3847,7 @@
       <eventref hlink="_e990648f5d42997797e76ea14b3" role="Primary"/>
       <childof hlink="_e990633402f17735c8e45148206"/>
     </person>
-    <person handle="_e99064e3a87200458764b60a7fd" change="1605040057" id="I0110">
+    <person handle="_e99064e3a87200458764b60a7fd" change="1607456607" id="I0110">
       <gender>M</gender>
       <name type="Birth Name">
         <first>Jon</first>
@@ -3852,7 +3856,7 @@
       <eventref hlink="_e990651335818680d05d4f0e999" role="Primary"/>
       <childof hlink="_e990633402f17735c8e45148206"/>
     </person>
-    <person handle="_e9906531a59541b88649bac34a" change="1605040057" id="I0111">
+    <person handle="_e9906531a59541b88649bac34a" change="1607457080" id="I0111">
       <gender>F</gender>
       <name type="Birth Name">
         <first>Mengia</first>
@@ -3860,9 +3864,9 @@
       </name>
       <eventref hlink="_e990656dc794091217af686bc87" role="Primary"/>
       <eventref hlink="_e99065b8bdc5bc56c21a6bb80b5" role="Primary"/>
-      <childof hlink="_e990633402f17735c8e45148206"/>
+      <childof hlink="_e9ea6e0727b68a67fd4917f1d4b"/>
     </person>
-    <person handle="_e99065ea9ae7e14a1df30a72b04" change="1605040057" id="I0112">
+    <person handle="_e99065ea9ae7e14a1df30a72b04" change="1607457265" id="I0112">
       <gender>F</gender>
       <name type="Birth Name">
         <first>Maria</first>
@@ -3870,9 +3874,9 @@
       </name>
       <eventref hlink="_e990661c1d0434aa3dbb315f1c4" role="Primary"/>
       <eventref hlink="_e990663adbcbe1de50d359684c" role="Primary"/>
-      <childof hlink="_e990633402f17735c8e45148206"/>
+      <childof hlink="_e9ea719cf283e09651e35a0b575"/>
     </person>
-    <person handle="_e99066554c97658c5ca9d41aa95" change="1605040057" id="I0113">
+    <person handle="_e99066554c97658c5ca9d41aa95" change="1607457467" id="I0113">
       <gender>F</gender>
       <name type="Birth Name">
         <first>Maria</first>
@@ -3880,7 +3884,7 @@
       </name>
       <eventref hlink="_e990668a0f055e37e558e7453ea" role="Primary"/>
       <eventref hlink="_e99066a54636007e8fa66bd4609" role="Primary"/>
-      <childof hlink="_e990633402f17735c8e45148206"/>
+      <childof hlink="_e9ea719cf283e09651e35a0b575"/>
     </person>
     <person handle="_e9a01843561653169dd713112cc" change="1605461514" id="I0114">
       <gender>F</gender>
@@ -5867,7 +5871,7 @@
       <childref hlink="_e98915a4aaa7857c94133c942dc"/>
       <childref hlink="_e989161b00c7655f4d7e35a1e9b"/>
     </family>
-    <family handle="_e98919714de4b3c14623c8904c4" change="1604850828" id="F0009">
+    <family handle="_e98919714de4b3c14623c8904c4" change="1607457618" id="F0009">
       <rel type="Married"/>
       <father hlink="_e98915a4aaa7857c94133c942dc"/>
       <mother hlink="_e98951ca8175afafb35cd32abaf"/>
@@ -5985,16 +5989,13 @@
       <childref hlink="_e98d3608b4747736a89b48a948d"/>
       <childref hlink="_e98d3664593340cf615bf8d3339"/>
     </family>
-    <family handle="_e990633402f17735c8e45148206" change="1605040057" id="F0022">
-      <rel type="Unknown"/>
+    <family handle="_e990633402f17735c8e45148206" change="1607457423" id="F0022">
+      <rel type="Married"/>
       <father hlink="_e9891e2fdd7dc80ac2e9656bf8"/>
       <mother hlink="_e9905fadc4d43c68ef13d959c07"/>
       <childref hlink="_e990638e0793d33bb6bfcff6c38"/>
       <childref hlink="_e990640230e137e9f3300272a59"/>
       <childref hlink="_e99064e3a87200458764b60a7fd"/>
-      <childref hlink="_e9906531a59541b88649bac34a"/>
-      <childref hlink="_e99065ea9ae7e14a1df30a72b04"/>
-      <childref hlink="_e99066554c97658c5ca9d41aa95"/>
     </family>
     <family handle="_e9a019c5911b2204b5ba588048" change="1605461939" id="F0023">
       <rel type="Married"/>
@@ -6367,6 +6368,19 @@
       <rel type="Unknown"/>
       <mother hlink="_e9dd3b7766854f9128d8545c4fa"/>
       <childref hlink="_e9dd4f726e971a12d2ac50f508"/>
+    </family>
+    <family handle="_e9ea6e0727b68a67fd4917f1d4b" change="1607457080" id="F0069">
+      <rel type="Married"/>
+      <father hlink="_e9891e2fdd7dc80ac2e9656bf8"/>
+      <mother hlink="_e9906179f3e4c89870ac0ad6564"/>
+      <childref hlink="_e9906531a59541b88649bac34a"/>
+    </family>
+    <family handle="_e9ea719cf283e09651e35a0b575" change="1607457467" id="F0070">
+      <rel type="Married"/>
+      <father hlink="_e9891e2fdd7dc80ac2e9656bf8"/>
+      <mother hlink="_e99062893aa735584927321646f"/>
+      <childref hlink="_e99065ea9ae7e14a1df30a72b04"/>
+      <childref hlink="_e99066554c97658c5ca9d41aa95"/>
     </family>
   </families>
   <places>
