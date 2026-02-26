@@ -1,29 +1,48 @@
 ## About
+
 We want to digitalize the full Davatz, Davats, Taffattz, Davaz, etc. family tree using the [Gramps Project](https://gramps-project.org).
 
-## Davaz Family tree
-We use [Gramps XML format](https://gramps-project.org/wiki/index.php/Database_Formats): 
-Export > Gramps XML (we have no media) > No compression (for clearer diffs) > davaz.gramps. 
+## Davaz Family Tree
+
+We use [Gramps XML format](https://gramps-project.org/wiki/index.php/Database_Formats):
+Export > Gramps XML (we have no media) > No compression (for clearer diffs) > davaz.gramps.
 
 ## GEDCOM File
 
-We use GEDCOM file to generate PDF, so we generate it after major tree changes.
+We use the GEDCOM file to generate PDFs, so we regenerate it after major tree changes.
 
-The logic is similar to exporting XML, it's another way to export the tree, but we also exclude living people as well as poeple marked as private so that they do not appear in the resulting PDF.
+The export logic is similar to XML, but we also exclude living people as well as people marked as private so that they do not appear in the resulting PDF.
 
 ## Collaboration Workflow
 
-There is one quirk which has more to do with Gramps, but affects our workflow - importing a family tree into existing one merges it instead of replacing. So if I import the updated tree after merging external changes in github, it will create duplicates of all existing people and add new ones. To import actual XML from the repository one would need to start an empty family tree (Family Trees > Manage Family Trees > New). We could also use that as a feature if we ever had conflicts that we can't solve.
+There is one quirk which has more to do with Gramps, but affects our workflow — importing a family tree into an existing one merges it instead of replacing. So if you import the updated tree after merging external changes on GitHub, it will create duplicates of all existing people and add new ones. To import actual XML from the repository, start an empty family tree (Family Trees > Manage Family Trees > New). We could also use that as a feature if we ever had conflicts that we can't solve.
 
-The XML itself seems to be about generating `<person>`, `<family>` and `<event>` nodes (we also have `<places>`, but there are very few and it uses similar logic). Each such node has few properties - `handle` (UUID-like hash which is used as an actuall identifier to connect different nodes to eachother), `change` (looks like an integer timestamp of the last change) and `id` - this one looks like a string of a letter identifying the node ("I" for person, "F" for family, "E" for event) and a sequential integer. I am not sure as to why it exists, but it will cause problems if we do changes in parallel. To fix conflicts on such IDs, the branch that needs to be merged would have to find the latest node of each type in master (they are generated top to bottom so the one with the last number would be the last one in the XML file), take its number, add 1 and adjust its own nodes so that they start with that number and go from there. 
+The XML generates `<person>`, `<family>` and `<event>` nodes (we also have `<places>`, but there are very few and they use similar logic). Each node has a few properties:
 
-Example for persons: Master has I0127 as ID of the last person and my branch has few entries that are below 127 so the IDs are duplicated. I'd have to change the ID of the first new person in my XML to I0128 and then go down the list and make them I0129, I0130 etc. Then do the same with events etc, that should suffice. As a side note - the more changes one has, the more work it is to adjust these IDs, so it's better to merge often.
+- **`handle`** — UUID-like hash used as the actual identifier to connect different nodes to each other.
+- **`change`** — Integer timestamp of the last change.
+- **`id`** — A string with a letter identifying the node type ("I" for person, "F" for family, "E" for event) followed by a sequential integer.
 
-I also checked what happens if we don't do that and could see no actual problems: I have created a duplicate ID (I0022) which was shared by 2 person nodes and imported the resulting XML, I could see this ID in the UI but other then that it didn't seem to affect anything. So it seems these IDs are mostly cosmetic and the steps to make them unique as described above are actually optional.
+### ID Collision During Merges
 
-If we ever had a conflict on `handle` property, that would be tricky cause the nodes are linked using values of that property, but they look like UUIDs so I assume it conflicts are so unlikely that we can consider them impossible.
+The sequential `id` values will cause problems if we make changes in parallel. To fix conflicts, the branch that needs to be merged would have to find the latest node of each type in master (they are generated top to bottom, so the last number is at the end of the XML file), take its number, add 1, and adjust its own nodes so that they start from there.
 
-There is also `priv` property that appears on some person nodes and seems to always have a value of "1", I assume it's some boolean set in the UI which is of no consequence for our workflow.
+**Example for persons:** Master has `I0127` as the last person ID and my branch has entries below 127, so the IDs are duplicated. Change the first new person's ID to `I0128`, then continue down the list as `I0129`, `I0130`, etc. Do the same with events and families. The more changes one has, the more work it is to adjust these IDs, so it's better to merge often.
+
+Note: ID collisions are mostly cosmetic. Duplicate IDs import fine and don't seem to affect anything in the UI. The steps above to make them unique are optional.
+
+### Handle Collisions
+
+If we ever had a conflict on the `handle` property, that would be tricky because nodes are linked using these values. However, they look like UUIDs, so conflicts are extremely unlikely.
+
+### Privacy
+
+The `priv` property appears on some person nodes with a value of "1". This boolean marks people as private so they are excluded from the GEDCOM export.
+
+## Claude Code
+
+See [CLAUDE.md](CLAUDE.md) for AI-assisted development guidance.
 
 ## License
-The License of the is Project is GPLv3.0, see the License file.
+
+The license of this project is GPLv3.0, see the [LICENSE](LICENSE.md) file.
