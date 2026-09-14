@@ -10,6 +10,7 @@ This is a **genealogy data repository** (not a software project) for digitalizin
 
 - **davaz.gramps** — Primary data file in Gramps XML format (uncompressed for clearer diffs, no media). This is the source of truth.
 - **davaz.ged** — GEDCOM export for PDF generation. Excludes living people and those marked private (`priv="1"`).
+- **docs/** — Publication-ready documents, not tree data. Currently the trilingual Thomas Davatz portrait (`Thomas-Davatz-DE-EN-PT.pdf`) and its HTML source.
 - No source code, build system, tests, or dependencies.
 
 ## Data Structure (Gramps XML)
@@ -26,6 +27,20 @@ Three main node types, each with `handle` (UUID linking nodes together), `change
 - **Export XML**: Gramps UI > Export > Gramps XML > No compression > `davaz.gramps`
 - **Export GEDCOM**: Same flow but exclude living/private people > `davaz.ged`
 - **Importing quirk**: Gramps *merges* on import rather than replacing. To import updated XML, start a new empty family tree first (Family Trees > Manage > New).
+
+## docs/ — Document Generation
+
+`docs/thomas-davatz.html` is a standalone HTML document rendered to PDF with WeasyPrint:
+
+```
+weasyprint docs/thomas-davatz.html docs/Thomas-Davatz-DE-EN-PT.pdf
+```
+
+- Print CSS only (`@page`, A4). Fonts are Source Serif Pro / Source Sans Pro; other fonts change pagination.
+- **No photographs of living people in this repository.** The repo is public (`github.com/bcat-eu/davaz`), so the committed edition is text-only. A private edition adds a plate section with gathering photographs; keep those images out of `docs/` and out of the Git history.
+- Avoid `::first-letter { float: left }` — WeasyPrint shifts only the second line, so drop caps collide with the first line of text.
+
+**Content caveat:** The subject of that document, the emigrant Thomas Davatz (1815–1888), is **not** in `davaz.gramps`, and his dates are from historical literature rather than verified registers. Do not treat the PDF as a source for the tree; verify against Grisons registers first.
 
 ## ID Collision Management (Merge Conflicts)
 

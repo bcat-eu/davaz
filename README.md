@@ -39,6 +39,24 @@ If we ever had a conflict on the `handle` property, that would be tricky because
 
 The `priv` property appears on some person nodes with a value of "1". This boolean marks people as private so they are excluded from the GEDCOM export.
 
+## Documents
+
+The `docs/` folder holds publication-ready material generated from — or related to — the tree.
+
+- **[Thomas-Davatz-DE-EN-PT.pdf](docs/Thomas-Davatz-DE-EN-PT.pdf)** — A trilingual portrait (German, English, Portuguese) of the emigrant **Thomas Davatz (1815–1888)**, the schoolteacher from Fideris in the Prättigau who emigrated to Brazil in 1855, ended up in debt bondage under the *parceria* system on the Ibicaba coffee plantation near Limeira (São Paulo), led the colonists' revolt of December 1856, and changed European emigration policy with his 1858 report published in Chur. Sérgio Buarque de Holanda's 1941 translation, *Memórias de um colono no Brasil*, made him a standard source in Brazilian historiography.
+
+  **Note:** Thomas Davatz is *not* recorded in `davaz.gramps`. The file contains no reference to Brazil, Ibicaba or Fideris. His dates come from the historical literature, not from verified parish registers, and should be checked in the Grisons church and civil registers before he is entered into the tree.
+
+- **thomas-davatz.html** — Source of the PDF. Rebuild with [WeasyPrint](https://weasyprint.org):
+
+  ```
+  weasyprint docs/thomas-davatz.html docs/Thomas-Davatz-DE-EN-PT.pdf
+  ```
+
+  The layout uses Source Serif Pro and Source Sans Pro; substitute fonts change the pagination.
+
+  **This is the text-only edition.** A longer version adds a plate section with photographs from the family gathering in the Val Müstair on 13 September 2026. Those photographs show identifiable people and are deliberately kept out of this public repository; they are circulated privately instead.
+
 ## Claude Code
 
 See [CLAUDE.md](CLAUDE.md) for AI-assisted development guidance.

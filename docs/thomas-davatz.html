@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Thomas Davatz — Auswanderer, Kolonist, Ankläger</title>
+<style>
+  @page {
+    size: A4;
+    margin: 24mm 21mm 20mm 21mm;
+    @bottom-center {
+      content: counter(page);
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 8.5pt;
+      color: #8a8178;
+    }
+  }
+  @page :first { margin: 0; @bottom-center { content: none; } }
+
+  html { font-family: "Source Serif Pro", Georgia, serif; font-size: 10.5pt; color: #1c1917; }
+  body { margin: 0; line-height: 1.52; hyphens: auto; text-align: justify; }
+
+  /* ---------- title page ---------- */
+  .cover {
+    page: cover;
+    height: 297mm; width: 210mm;
+    box-sizing: border-box;
+    padding: 46mm 26mm 22mm 26mm;
+    background: #faf7f2;
+    page-break-after: always;
+    text-align: left;
+  }
+  .cover .rule { width: 46mm; height: 3px; background: #8c2f1f; margin-bottom: 11mm; }
+  .cover .kicker {
+    font-family: "Source Sans Pro", sans-serif; font-size: 9.5pt; letter-spacing: .18em;
+    text-transform: uppercase; color: #8c2f1f; margin-bottom: 5mm;
+  }
+  .cover h1 { font-size: 38pt; line-height: 1.04; margin: 0 0 3mm 0; font-weight: 600; letter-spacing: -0.01em; }
+  .cover .dates { font-size: 13pt; color: #6b625a; margin-bottom: 14mm; font-variant-numeric: oldstyle-nums; }
+  .cover .subs p {
+    margin: 0 0 3.5mm 0; font-size: 11.5pt; line-height: 1.42; color: #3b342e;
+    padding-left: 7mm; border-left: 2px solid #ddd3c6; text-align: left;
+  }
+  .cover .subs .lang {
+    font-family: "Source Sans Pro", sans-serif; font-size: 7.5pt; letter-spacing: .14em;
+    text-transform: uppercase; color: #a89d90; display: block; margin-bottom: 1mm;
+  }
+  .cover .foot {
+    position: absolute; bottom: 22mm; left: 26mm; right: 26mm;
+    font-family: "Source Sans Pro", sans-serif; font-size: 8.5pt; color: #8a8178;
+    border-top: 1px solid #e2d9cc; padding-top: 3mm; text-align: left;
+  }
+
+  /* ---------- language sections ---------- */
+  section.lang-section { page-break-before: always; }
+  .chip {
+    font-family: "Source Sans Pro", sans-serif; font-size: 8pt; letter-spacing: .16em;
+    text-transform: uppercase; color: #fff; background: #8c2f1f;
+    padding: 1.5mm 3mm; border-radius: 2px; display: inline-block; margin-bottom: 5mm;
+  }
+  h2 {
+    font-size: 21pt; line-height: 1.16; margin: 0 0 2mm 0; font-weight: 600;
+    letter-spacing: -0.01em; text-align: left;
+  }
+  .standfirst {
+    font-size: 11.5pt; color: #554d45; line-height: 1.45; margin: 0 0 7mm 0;
+    padding-bottom: 6mm; border-bottom: 1px solid #e2d9cc; text-align: left;
+  }
+  h3 {
+    font-family: "Source Sans Pro", sans-serif; font-size: 10pt; font-weight: 600;
+    letter-spacing: .04em; margin: 7mm 0 2mm 0; color: #8c2f1f; text-align: left;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 3mm 0; }
+  p.first { margin-top: 1mm; }
+  blockquote {
+    margin: 5mm 0 5mm 0; padding: 0 0 0 7mm; border-left: 2px solid #c9a227;
+    font-style: italic; color: #3b342e; text-align: left;
+  }
+  blockquote cite { display: block; font-style: normal; font-size: 8.5pt; color: #8a8178;
+    font-family: "Source Sans Pro", sans-serif; margin-top: 2mm; }
+
+  /* ---------- chronology ---------- */
+  table.chron { width: 100%; border-collapse: collapse; margin: 3mm 0 0 0; font-size: 9.5pt; }
+  table.chron td { padding: 1.7mm 0; vertical-align: top; border-bottom: 1px solid #efe8de; text-align: left; }
+  table.chron td.y {
+    width: 20mm; font-family: "Source Sans Pro", sans-serif; font-weight: 600;
+    color: #8c2f1f; white-space: nowrap; font-size: 9pt;
+  }
+  tr { page-break-inside: avoid; }
+
+  /* ---------- notes / sources ---------- */
+  .note {
+    background: #faf7f2; border-left: 2px solid #c9a227; padding: 4mm 5mm;
+    font-size: 9pt; line-height: 1.45; margin: 6mm 0 0 0; text-align: left; color: #3b342e;
+  }
+  .note strong { color: #1c1917; }
+  ul.src { margin: 2mm 0 0 0; padding-left: 5mm; font-size: 9.5pt; line-height: 1.45; text-align: left; }
+  ul.src li { margin-bottom: 2mm; }
+  .caveat { font-size: 9pt; color: #6b625a; }
+
+  /* ---------- photo plates ---------- */
+  figure { margin: 0 0 7mm 0; page-break-inside: avoid; }
+  figure img { width: 100%; display: block; }
+  figure.half { width: 132mm; margin-left: auto; margin-right: auto; }
+  figcaption {
+    font-family: "Source Sans Pro", sans-serif; font-size: 8pt; line-height: 1.4;
+    color: #6b625a; margin-top: 2mm; text-align: left;
+  }
+  figcaption .de { color: #1c1917; display: block; }
+  figcaption .en, figcaption .pt { display: block; font-style: italic; }
+</style>
+</head>
+<body>
+
+<!-- ======================= COVER ======================= -->
+<div class="cover">
+  <div class="rule"></div>
+  <div class="kicker">Familiengeschichte Davatz</div>
+  <h1>Thomas<br>Davatz</h1>
+  <div class="dates">1815 – 1888 · Fideris, Graubünden → Ibicaba, São Paulo</div>
+
+  <div class="subs">
+    <p><span class="lang">Deutsch</span>Der Bündner Lehrer, der 1855 nach Brasilien auswanderte, auf der Kaffeefazenda Ibicaba in Schuldknechtschaft geriet und mit seinem Bericht von 1858 die europäische Auswanderungspolitik veränderte.</p>
+    <p><span class="lang">English</span>The schoolmaster from Graubünden who emigrated to Brazil in 1855, found himself in debt bondage on the Ibicaba coffee plantation, and whose 1858 account changed European emigration policy.</p>
+    <p><span class="lang">Português</span>O professor suíço que emigrou para o Brasil em 1855, viu-se em servidão por dívida na Fazenda Ibicaba e cujo relato de 1858 mudou a política emigratória europeia.</p>
+  </div>
+
+  <div class="foot">Ein dreisprachiges Porträt · A trilingual portrait · Um retrato trilíngue</div>
+</div>
+
+<!-- ======================= DEUTSCH ======================= -->
+<section class="lang-section" lang="de">
+  <div class="chip">Deutsch</div>
+  <h2>Der Lehrer, der nicht schwieg</h2>
+  <div class="standfirst">Thomas Davatz war weder Abenteurer noch Politiker. Er war ein Dorfschullehrer aus dem Prättigau, der einem Werbeversprechen glaubte — und der, als sich das Versprechen als Falle erwies, das Einzige tat, was er wirklich konnte: genau hinsehen, aufschreiben und veröffentlichen.</div>
+
+  <p class="first">Als Thomas Davatz 1855 mit seiner Familie in Fideris aufbrach, war die Auswanderung nach Brasilien in den Bündner Tälern ein vertrautes Gesprächsthema. Agenten warben mit dem sogenannten <em>Parceria</em>-System, einem Halbpachtvertrag: Die Kaffeepflanzer schossen die Überfahrt vor, die Familie bekam einen Kaffeegarten zugewiesen, und vom Erlös der Ernte sollte die Hälfte den Pflanzern, die andere Hälfte den Kolonisten gehören. Wer fleissig war, so hiess es, hatte die Schuld in wenigen Jahren getilgt und wurde freier Bauer.</p>
+
+  <p>Der Hintergrund dieses Angebots lag nicht in der Menschenfreundlichkeit der Pflanzer. Brasilien hatte 1850 mit dem Gesetz Eusébio de Queirós den transatlantischen Sklavenhandel beendet. Den expandierenden Kaffeeprovinzen ging damit absehbar der Nachschub an versklavten Menschen aus, und die Grossgrundbesitzer suchten Ersatz. Senator Nicolau Pereira de Campos Vergueiro, einer der mächtigsten Männer der Provinz São Paulo, hatte bereits 1847 die ersten europäischen Familien auf seine Fazenda Ibicaba bei Limeira geholt. Dorthin kamen auch die Davatz.</p>
+
+  <h3>Die Rechnung, die nie aufging</h3>
+  <p>Was die Kolonisten vorfanden, war ein System, das rechnerisch verschlossen war. Die Überfahrt wurde als verzinste Schuld gebucht, ebenso Werkzeug, Saatgut und Vorschüsse. Eingekauft werden musste im Laden der Fazenda, zu Preisen, die der Gutsherr bestimmte. Der geerntete Kaffee wurde vom Gutsherrn gewogen, verarbeitet und verkauft; die Abrechnung führte er allein, in einer Sprache und einer Buchhaltung, die kaum ein Kolonist prüfen konnte. Wer die Fazenda verlassen wollte, musste zuerst die Schuld begleichen — und die Schuld wuchs schneller, als sie sich abtragen liess.</p>
+
+  <p>Davatz, als Lehrer schreibkundig und des Rechnens gewohnt, wurde zum Sprecher. Er unterrichtete die Kinder der Kolonisten, sammelte Beschwerden, verglich Verträge mit Abrechnungen und verfasste Eingaben. Genau das machte ihn gefährlich: Er konnte belegen, was andere nur ahnten.</p>
+
+  <h3>Der Aufstand von Ibicaba</h3>
+  <p>Im Dezember 1856 eskalierte der Konflikt. Die Kolonisten von Ibicaba — mehrere hundert Schweizer, Deutsche und andere Europäer — verweigerten den Gehorsam, bewaffneten sich notdürftig und brachten die Fazenda zeitweise unter ihre Kontrolle. Es war kein Umsturz, sondern der Versuch, ein Recht zu erzwingen, das auf dem Papier längst bestand. Behörden aus Limeira und der Provinz griffen ein, es kam zu Verhandlungen, und der Aufstand endete ohne Blutbad. Für Davatz jedoch war das Bleiben unmöglich geworden. 1857 kehrte er in die Schweiz zurück.</p>
+
+  <blockquote>
+    Die Behandlung der Kolonisten in der Provinz St. Paulo in Brasilien und deren Erhebung gegen ihre Bedrücker.
+    <cite>Titel der Schrift, Chur 1858 — ein Hilferuf an die Behörden der Herkunftsländer</cite>
+  </blockquote>
+
+  <h3>Ein Buch mit Folgen</h3>
+  <p>1858 erschien in Chur sein Bericht. Er war nüchtern gebaut, voller Zahlen, Vertragsauszüge und Namen — kein Pamphlet, sondern eine Beweisführung. Die Wirkung war beträchtlich. Die Schweizer Behörden nahmen die Auswanderungsagenturen stärker an die Kette; Preussen untersagte 1859 mit dem von-der-Heydt'schen Reskript die Anwerbung für Brasilien; der Bundesrat entsandte 1860 Johann Jakob von Tschudi als Sonderbeauftragten nach Brasilien, der die Lage der Kolonisten vor Ort untersuchte und mit der brasilianischen Regierung verhandelte. Das <em>Parceria</em>-Modell verlor seinen guten Ruf und wurde später durch staatlich subventionierte Einwanderung abgelöst.</p>
+
+  <h3>Nachleben in Brasilien</h3>
+  <p>Die zweite Karriere des Buches begann 1941, als der Historiker Sérgio Buarque de Holanda es ins Portugiesische übersetzte und kommentierte: <em>Memórias de um colono no Brasil</em>. Seither ist Davatz in Brasilien eine Quelle ersten Ranges — zitiert in Schulbüchern, Universitätsseminaren und in der bis heute geführten Debatte darüber, wie nah die Arbeitsverhältnisse auf den frühen Kaffeekolonien der Sklaverei standen, die sie ersetzen sollten. Die Fazenda Ibicaba bei Cordeirópolis existiert noch und ist ein Erinnerungsort der Einwanderungsgeschichte.</p>
+
+  <p>Für die Familiengeschichte der Davatz ist er damit ein seltener Fall: ein Namensträger, der nicht in den Kirchenbüchern seines Tals, sondern in der Nationalgeschichte eines anderen Kontinents weiterlebt.</p>
+
+  <h3>Zeittafel</h3>
+  <table class="chron">
+    <tr><td class="y">1815</td><td>Geboren in Fideris, Prättigau, Kanton Graubünden; später Lehrer.</td></tr>
+    <tr><td class="y">1850</td><td>Brasilien beendet den transatlantischen Sklavenhandel (Gesetz Eusébio de Queirós); die Kaffeepflanzer suchen europäische Arbeitskräfte.</td></tr>
+    <tr><td class="y">1847</td><td>Senator Vergueiro siedelt die ersten europäischen Familien auf der Fazenda Ibicaba an.</td></tr>
+    <tr><td class="y">1855</td><td>Auswanderung mit der Familie nach Brasilien; Ankunft auf Ibicaba bei Limeira, Provinz São Paulo.</td></tr>
+    <tr><td class="y">1856</td><td>Dezember: Erhebung der Kolonisten; Davatz als ihr Wortführer.</td></tr>
+    <tr><td class="y">1857</td><td>Rückkehr in die Schweiz.</td></tr>
+    <tr><td class="y">1858</td><td>Erscheinen seines Berichts in Chur.</td></tr>
+    <tr><td class="y">1859</td><td>Preussen verbietet mit dem von-der-Heydt'schen Reskript die Anwerbung für Brasilien.</td></tr>
+    <tr><td class="y">1860</td><td>Johann Jakob von Tschudi reist als Schweizer Sonderbeauftragter nach Brasilien.</td></tr>
+    <tr><td class="y">1888</td><td>Gestorben. — Im selben Jahr schafft Brasilien mit der <em>Lei Áurea</em> die Sklaverei ab.</td></tr>
+    <tr><td class="y">1941</td><td>Sérgio Buarque de Holanda übersetzt das Buch: <em>Memórias de um colono no Brasil</em>.</td></tr>
+  </table>
+</section>
+
+<!-- ======================= ENGLISH ======================= -->
+<section class="lang-section" lang="en">
+  <div class="chip">English</div>
+  <h2>The schoolmaster who would not keep quiet</h2>
+  <div class="standfirst">Thomas Davatz was neither an adventurer nor a politician. He was a village schoolteacher from the Prättigau valley who believed a recruiter's promise — and who, when the promise turned out to be a trap, did the one thing he was truly good at: look closely, write it down, and publish it.</div>
+
+  <p class="first">When Thomas Davatz left Fideris with his family in 1855, emigration to Brazil was a familiar topic in the valleys of Graubünden. Agents advertised the <em>parceria</em> system, a sharecropping arrangement: the coffee planters advanced the cost of the passage, each family was assigned a plot of coffee trees, and the proceeds of the harvest were to be split evenly between planter and colonist. Work hard, the pitch went, and within a few years the debt would be cleared and you would farm your own land.</p>
+
+  <p>The reason for this offer was not planter philanthropy. In 1850 Brazil had ended the transatlantic slave trade with the Eusébio de Queirós Law. The expanding coffee provinces could see their supply of enslaved people drying up, and the great landowners went looking for a replacement. Senator Nicolau Pereira de Campos Vergueiro, one of the most powerful men in the province of São Paulo, had already brought the first European families to his Ibicaba plantation near Limeira in 1847. That is where the Davatz family arrived.</p>
+
+  <h3>The account that never balanced</h3>
+  <p>What the colonists found was a system sealed shut by arithmetic. The passage was entered as an interest-bearing debt, and so were tools, seed and advances. Purchases had to be made at the plantation store, at prices the landowner set. The harvested coffee was weighed, processed and sold by the landowner, who also kept the books alone — in a language and a bookkeeping that almost no colonist could audit. Anyone wanting to leave had first to settle the debt, and the debt grew faster than it could be paid down.</p>
+
+  <p>Davatz, literate and comfortable with figures, became the colonists' spokesman. He taught their children, collected grievances, checked contracts against statements and drafted petitions. That is precisely what made him dangerous: he could document what others could only suspect.</p>
+
+  <h3>The Ibicaba uprising</h3>
+  <p>In December 1856 the conflict came to a head. The colonists of Ibicaba — several hundred Swiss, Germans and other Europeans — refused to obey, armed themselves as best they could, and for a time held the plantation. This was not an attempt at revolution but an attempt to enforce a right that already existed on paper. Authorities from Limeira and the province intervened, negotiations followed, and the revolt ended without a massacre. For Davatz, however, staying had become impossible. He returned to Switzerland in 1857.</p>
+
+  <blockquote>
+    The Treatment of the Colonists in the Province of St. Paul in Brazil and their Rising against their Oppressors.
+    <cite>Title of the book, Chur 1858 — an appeal to the authorities of the colonists' home countries</cite>
+  </blockquote>
+
+  <h3>A book with consequences</h3>
+  <p>His account appeared in Chur in 1858. It was soberly constructed, full of figures, contract extracts and names — not a pamphlet but a case file. Its effect was considerable. Swiss authorities tightened their grip on emigration agencies; in 1859 Prussia banned recruitment for Brazil through the von der Heydt Rescript; and in 1860 the Swiss Federal Council sent Johann Jakob von Tschudi to Brazil as a special envoy to investigate the colonists' situation on the ground and negotiate with the Brazilian government. The <em>parceria</em> model lost its good name and was eventually replaced by state-subsidised immigration.</p>
+
+  <h3>An afterlife in Brazil</h3>
+  <p>The book's second career began in 1941, when the historian Sérgio Buarque de Holanda translated and annotated it as <em>Memórias de um colono no Brasil</em>. Davatz has been a first-rank source in Brazil ever since — cited in school textbooks, in university seminars, and in the still-running debate about how close labour on the early coffee colonies came to the slavery it was meant to replace. The Ibicaba plantation, near Cordeirópolis, still stands and is a site of immigration memory.</p>
+
+  <p>For the Davatz family history he is therefore an unusual case: a bearer of the name who survives not in the parish registers of his own valley but in the national history of another continent.</p>
+
+  <h3>Timeline</h3>
+  <table class="chron">
+    <tr><td class="y">1815</td><td>Born in Fideris, Prättigau, canton of Graubünden; later a schoolteacher.</td></tr>
+    <tr><td class="y">1847</td><td>Senator Vergueiro settles the first European families on the Ibicaba plantation.</td></tr>
+    <tr><td class="y">1850</td><td>Brazil ends the transatlantic slave trade (Eusébio de Queirós Law); coffee planters turn to European labour.</td></tr>
+    <tr><td class="y">1855</td><td>Emigrates with his family to Brazil; arrives at Ibicaba near Limeira, province of São Paulo.</td></tr>
+    <tr><td class="y">1856</td><td>December: the colonists rise; Davatz acts as their spokesman.</td></tr>
+    <tr><td class="y">1857</td><td>Returns to Switzerland.</td></tr>
+    <tr><td class="y">1858</td><td>Publishes his account in Chur.</td></tr>
+    <tr><td class="y">1859</td><td>Prussia bans recruitment for Brazil (von der Heydt Rescript).</td></tr>
+    <tr><td class="y">1860</td><td>Johann Jakob von Tschudi travels to Brazil as Swiss special envoy.</td></tr>
+    <tr><td class="y">1888</td><td>Dies. — In the same year Brazil abolishes slavery with the <em>Lei Áurea</em>.</td></tr>
+    <tr><td class="y">1941</td><td>Sérgio Buarque de Holanda publishes the Portuguese translation, <em>Memórias de um colono no Brasil</em>.</td></tr>
+  </table>
+</section>
+
+<!-- ======================= PORTUGUÊS ======================= -->
+<section class="lang-section" lang="pt-BR">
+  <div class="chip">Português</div>
+  <h2>O professor que não se calou</h2>
+  <div class="standfirst">Thomas Davatz não era aventureiro nem político. Era um professor primário do vale do Prättigau que acreditou na promessa de um agenciador — e que, quando a promessa se revelou uma armadilha, fez a única coisa que realmente sabia fazer: observar de perto, anotar e publicar.</div>
+
+  <p class="first">Quando Thomas Davatz partiu de Fideris com a família em 1855, a emigração para o Brasil era assunto corrente nos vales dos Grisões. Os agentes divulgavam o sistema de <em>parceria</em>: os fazendeiros de café adiantavam o custo da travessia, cada família recebia um talhão de cafeeiros e o produto da colheita seria dividido meio a meio entre fazendeiro e colono. Bastava trabalhar com afinco, dizia-se, para quitar a dívida em poucos anos e tornar-se lavrador independente.</p>
+
+  <p>A razão dessa oferta não era a filantropia dos fazendeiros. Em 1850 o Brasil havia encerrado o tráfico transatlântico de escravizados com a Lei Eusébio de Queirós. As províncias cafeeiras em expansão viam esgotar-se o fornecimento de mão de obra escravizada, e os grandes proprietários buscaram substitutos. O senador Nicolau Pereira de Campos Vergueiro, um dos homens mais poderosos da província de São Paulo, já havia instalado as primeiras famílias europeias em sua Fazenda Ibicaba, perto de Limeira, em 1847. Foi ali que os Davatz chegaram.</p>
+
+  <h3>A conta que nunca fechava</h3>
+  <p>O que os colonos encontraram foi um sistema fechado pela aritmética. A travessia era lançada como dívida com juros, e o mesmo valia para ferramentas, sementes e adiantamentos. As compras tinham de ser feitas na venda da fazenda, a preços fixados pelo proprietário. O café colhido era pesado, beneficiado e vendido pelo fazendeiro, que também mantinha sozinho a escrituração — em um idioma e em uma contabilidade que quase nenhum colono conseguia conferir. Quem quisesse ir embora precisava antes quitar a dívida, e a dívida crescia mais depressa do que era possível pagá-la.</p>
+
+  <p>Davatz, alfabetizado e habituado a lidar com números, tornou-se o porta-voz dos colonos. Ensinava as crianças, reunia queixas, confrontava contratos com prestações de contas e redigia petições. Foi justamente isso que o tornou perigoso: ele conseguia documentar aquilo que os outros apenas pressentiam.</p>
+
+  <h3>A revolta de Ibicaba</h3>
+  <p>Em dezembro de 1856 o conflito chegou ao limite. Os colonos de Ibicaba — várias centenas de suíços, alemães e outros europeus — recusaram obediência, armaram-se como puderam e mantiveram a fazenda sob seu controle por algum tempo. Não foi uma tentativa de revolução, mas de fazer valer um direito que já existia no papel. Autoridades de Limeira e da província intervieram, houve negociações e a revolta terminou sem derramamento de sangue. Para Davatz, porém, permanecer tornara-se impossível. Em 1857 regressou à Suíça.</p>
+
+  <blockquote>
+    O tratamento dispensado aos colonos na província de São Paulo, no Brasil, e seu levante contra os opressores.
+    <cite>Título do livro, Chur, 1858 — um apelo às autoridades dos países de origem dos colonos</cite>
+  </blockquote>
+
+  <h3>Um livro com consequências</h3>
+  <p>Seu relato saiu em Chur, em 1858. Era de construção sóbria, cheio de cifras, trechos de contratos e nomes — não um panfleto, mas um dossiê. O efeito foi considerável. As autoridades suíças apertaram o controle sobre as agências de emigração; em 1859 a Prússia proibiu o recrutamento para o Brasil por meio do Rescrito von der Heydt; e em 1860 o Conselho Federal suíço enviou Johann Jakob von Tschudi ao Brasil como emissário especial, para averiguar in loco a situação dos colonos e negociar com o governo brasileiro. O modelo de <em>parceria</em> perdeu o bom nome e acabou substituído pela imigração subvencionada pelo Estado.</p>
+
+  <h3>Sobrevida no Brasil</h3>
+  <p>A segunda carreira do livro começou em 1941, quando o historiador Sérgio Buarque de Holanda o traduziu e anotou como <em>Memórias de um colono no Brasil</em>. Desde então Davatz é no Brasil uma fonte de primeira ordem — citada em livros didáticos, em seminários universitários e no debate ainda vivo sobre o quanto as relações de trabalho nas primeiras colônias cafeeiras se aproximavam da escravidão que deveriam substituir. A Fazenda Ibicaba, hoje no município de Cordeirópolis, ainda existe e é um lugar de memória da imigração.</p>
+
+  <p>Para a história da família Davatz, ele é por isso um caso raro: um portador do nome que sobrevive não nos livros paroquiais de seu próprio vale, mas na história nacional de outro continente.</p>
+
+  <h3>Cronologia</h3>
+  <table class="chron">
+    <tr><td class="y">1815</td><td>Nasce em Fideris, Prättigau, cantão dos Grisões; mais tarde professor.</td></tr>
+    <tr><td class="y">1847</td><td>O senador Vergueiro instala as primeiras famílias europeias na Fazenda Ibicaba.</td></tr>
+    <tr><td class="y">1850</td><td>O Brasil encerra o tráfico transatlântico (Lei Eusébio de Queirós); os cafeicultores recorrem à mão de obra europeia.</td></tr>
+    <tr><td class="y">1855</td><td>Emigra com a família para o Brasil; chega a Ibicaba, perto de Limeira, província de São Paulo.</td></tr>
+    <tr><td class="y">1856</td><td>Dezembro: os colonos se revoltam; Davatz atua como porta-voz.</td></tr>
+    <tr><td class="y">1857</td><td>Regressa à Suíça.</td></tr>
+    <tr><td class="y">1858</td><td>Publica seu relato em Chur.</td></tr>
+    <tr><td class="y">1859</td><td>A Prússia proíbe o recrutamento para o Brasil (Rescrito von der Heydt).</td></tr>
+    <tr><td class="y">1860</td><td>Johann Jakob von Tschudi viaja ao Brasil como emissário especial suíço.</td></tr>
+    <tr><td class="y">1888</td><td>Falece. — No mesmo ano o Brasil abole a escravidão com a <em>Lei Áurea</em>.</td></tr>
+    <tr><td class="y">1941</td><td>Sérgio Buarque de Holanda publica a tradução <em>Memórias de um colono no Brasil</em>.</td></tr>
+  </table>
+</section>
+
+<!-- ======================= SOURCES ======================= -->
+<section class="lang-section" lang="de">
+  <div class="chip">Quellen · Sources · Fontes</div>
+  <h2>Ausgaben und Literatur</h2>
+  <div class="standfirst">Editionen, Kontext und ein Hinweis zum Stand der genealogischen Erfassung.</div>
+
+  <h3>Das Werk · The work · A obra</h3>
+  <ul class="src">
+    <li>Thomas Davatz: <em>Die Behandlung der Kolonisten in der Provinz St. Paulo in Brasilien und deren Erhebung gegen ihre Bedrücker.</em> Chur 1858.</li>
+    <li>Thomas Davatz: <em>Memórias de um colono no Brasil.</em> Tradução, prefácio e notas de Sérgio Buarque de Holanda. São Paulo 1941 (mit späteren Neuauflagen · with later editions · com reedições posteriores).</li>
+  </ul>
+
+  <h3>Zeitgenössischer Kontext · Contemporary context · Contexto da época</h3>
+  <ul class="src">
+    <li>Johann Jakob von Tschudi — Schweizer Sonderbeauftragter in Brasilien ab 1860; Berichte und Reisewerke zur Lage der Kolonien.</li>
+    <li>Von-der-Heydt'sches Reskript, Preussen 1859 — Verbot der Anwerbung für Brasilien.</li>
+    <li>Lei Eusébio de Queirós, 1850 — Ende des transatlantischen Sklavenhandels; Ausgangspunkt der <em>parceria</em>-Kolonien.</li>
+  </ul>
+
+  <h3>Orte · Places · Lugares</h3>
+  <ul class="src">
+    <li>Fideris, Prättigau, Graubünden (CH) — Herkunftsort.</li>
+    <li>Fazenda Ibicaba, heute Gemeinde Cordeirópolis bei Limeira, São Paulo (BR) — erhaltener Erinnerungsort der Einwanderung.</li>
+  </ul>
+
+  <div class="note">
+    <strong>Zum Stand der Erfassung.</strong> Thomas Davatz ist in der Familiendatei <em>davaz.gramps</em> bisher <strong>nicht</strong> erfasst; die Datei enthält weder einen Brasilien- noch einen Fideris-Bezug. Die Jahresangaben 1815 und 1888 sowie die Einzelheiten dieses Porträts stammen aus der historischen Literatur, nicht aus geprüften Kirchenbüchern. Vor einer Aufnahme in den Stammbaum sollten Geburts-, Heirats- und Todesdaten in den Bündner Kirchen- und Zivilstandsregistern verifiziert werden.
+    <br><br>
+    <strong>On the record status.</strong> Thomas Davatz is <strong>not</strong> yet recorded in the family file <em>davaz.gramps</em>. The dates 1815 and 1888 come from the historical literature, not from verified parish registers, and should be checked before he is entered into the tree.
+    <br><br>
+    <strong>Sobre o estado do registro.</strong> Thomas Davatz ainda <strong>não</strong> consta do arquivo familiar <em>davaz.gramps</em>. As datas de 1815 e 1888 provêm da literatura histórica, não de registros paroquiais verificados, e devem ser conferidas antes de sua inclusão na árvore.
+  </div>
+</section>
+
+</body>
+</html>
